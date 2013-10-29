@@ -1,12 +1,12 @@
 ruby "2.0.0"
 source 'https://rubygems.org'
 
-gem 'rails', '4.0.0.beta1'
+gem 'rails', '4.0.0'
 
 group :assets do
-  gem 'sass-rails', '~> 4.0.0.beta1'
+  gem 'sass-rails', '~> 4.0.0'
   gem 'bootstrap-sass'
-  gem 'coffee-rails', '~> 4.0.0.beta1'
+  gem 'coffee-rails', '~> 4.0.0'
   gem 'uglifier', '>= 1.0.3'
   gem 'font-awesome-rails'
 end
@@ -24,7 +24,7 @@ group :production do
   gem 'rails3_serve_static_assets', github: 'heroku/rails3_serve_static_assets'
 end
 
-group :production, :test do
+group :production do
   gem 'pg'
 end
 
