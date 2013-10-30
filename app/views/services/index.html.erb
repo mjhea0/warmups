@@ -1,9 +1,20 @@
 <div class="row">
   <div class="offset1 span10">
-    <% @providers.each do |provider| %>
-      <div class="span2">
-        <h3><%= provider.capitalize %></h3>
-      </div>
-    <% end %>
+  	<a href="<%= logout_path %>" class="btn"><%= t('auth.logout') %></a>
+  	<br>
+  	<br>
+  	<h2>Password Strength Check</h2>
+  	<br>
+		<p>As a payment processor security is something that is of upmost importance to us. One aspect of security is ensuring that users set strong passwords. We’d like you to write a routine that verifies password strength using the following rules:</p>
+		<ol>
+			<li>All passwords must be at least 8 characters in length</li>
+			<li>All passwords must contain at least one capital letter</li>
+			<li>All passwords must contain at least 2 digits</li>
+			<li>All passwords must contain a punctuation character (non Alpha-Numeric)</li>
+		</ol>
+		<h3>Extra Credit</h3>
+		<p>Create a utility for suggesting a password in cases where the strength is not sufficient. You should utilize some element of what the user entered for the suggested new password.</p>
+		<br>
+		<a href="#">Submit an Answer</a>
   </div>
 </div>
